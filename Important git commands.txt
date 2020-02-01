@@ -1,0 +1,90 @@
+Windows PowerShell
+Copyright (C) 2015 Microsoft Corporation. All rights reserved.
+
+PS C:\Users\Acer\Desktop\E-CommApp\ECommApp_7AM> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        register.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Acer\Desktop\E-CommApp\ECommApp_7AM> git add .
+PS C:\Users\Acer\Desktop\E-CommApp\ECommApp_7AM> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   register.html
+
+PS C:\Users\Acer\Desktop\E-CommApp\ECommApp_7AM> git add "register.html"
+PS C:\Users\Acer\Desktop\E-CommApp\ECommApp_7AM> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   register.html
+
+PS C:\Users\Acer\Desktop\E-CommApp\ECommApp_7AM> git commit -m "added register.html"
+[master c441859] added register.html
+ 1 file changed, 17 insertions(+)
+ create mode 100644 register.html
+PS C:\Users\Acer\Desktop\E-CommApp\ECommApp_7AM> git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 337 bytes | 168.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/PiyushC1/ECommApp_7AM.git
+   2f87aa5..c441859  master -> master
+PS C:\Users\Acer\Desktop\E-CommApp\ECommApp_7AM> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   register.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Acer\Desktop\E-CommApp\ECommApp_7AM> git add .
+PS C:\Users\Acer\Desktop\E-CommApp\ECommApp_7AM> git commit -m modified "register.html"
+[master 437860b] modified
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+PS C:\Users\Acer\Desktop\E-CommApp\ECommApp_7AM> git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 341 bytes | 18.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/PiyushC1/ECommApp_7AM.git
+   c441859..437860b  master -> master
+PS C:\Users\Acer\Desktop\E-CommApp\ECommApp_7AM>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
