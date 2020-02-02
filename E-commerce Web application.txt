@@ -1,0 +1,9 @@
+Create a web page for an E-commerce application
+that should contain the following pages:
+
+Login;
+Register;
+Cart;
+Forgot Password;
+Products;
+Categories and sub-categories.
