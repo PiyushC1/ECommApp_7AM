@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+
+    <body id="b_id">
+        <!--Absolute Path-->
+       <!-- <img src="C:\Users\Acer\Desktop\E-CommApp\ECommApp_7AM\Images/logo.png">-->
+        <!--Relative Path-->
+        <img src="images/logo.png" onclick="createData()" alt="This image isn't available" id="logo" >
+        
+        <img src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/joker-et00100071-03-04-2019-10-23-41.jpg">
+         <img src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/knives-out-et00106416-04-07-2019-02-42-35.jpg"> 
+    
+    </body>
+
+    <script>
+           
+        function createData(){
+           event.preventDefault();
+           var body=document.getElementById('b_id');
+           var h1=document.createElement('h1');
+           h1.innerHTML= "Company Name: DigitalLync";
+           b_id.appendChild(h1);
+        }
+     </script>
+</html>
