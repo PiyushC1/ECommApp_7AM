@@ -1,6 +1,47 @@
 <html>
     <head>
+    <style>
+     
+     span{
+      
+      background-color: red;
 
+     }
+
+     #header1{
+
+         color: red
+     }
+     #header2{
+
+         color: yellow;
+     }
+     #header3{
+
+         color: yellow;
+     }
+
+
+     .red{
+
+         color:red;
+     }
+     .green{
+
+         color:green
+     }
+
+     .orange{
+
+
+         color: orange;
+     }
+     
+     .bgblack{
+
+         background-color:black;
+     }
+    </style>
     </head>
 
     <body id="b_id">
@@ -11,7 +52,38 @@
         
         <img src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/joker-et00100071-03-04-2019-10-23-41.jpg">
          <img src="https://in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/knives-out-et00106416-04-07-2019-02-42-35.jpg"> 
-    
+              <!--Block Level Elements-->
+             <h1 style="background-color: red;">This is header 1</h1>
+
+             <h1> This is header 2</h1>
+             <span>This is span 1</span>
+             <span>This is span 2</span>
+             <span>This is span 3</span>
+             <a href="abc">Home</a>
+             <a href="login">Login</a>
+
+             <h1 id="header1">This is header 1</h1>
+             <h1 id="header2">This is header 2</h1>
+             <h1 id="header3">This is header 3</h1>
+             <button onclick="changeColor()">Click</button>
+
+
+             <h1 class="green">This is header 1</h1>
+             <h1 class="green"> This is header 2</h1>
+             <h1 class="orange">This is header 3</h1>
+             <button onclick="change()">Submit</button>
+
+             <script>
+               
+               function changeColor(){
+
+               event.preventDefault();
+                document.getElementById('header1').style.color="green";
+                document.getElementById('header2').style.color="blue";
+                document.getElementById('header3').style.color="violet";
+
+               }
+             </script>
     </body>
 
     <script>
@@ -22,6 +94,19 @@
            var h1=document.createElement('h1');
            h1.innerHTML= "Company Name: DigitalLync";
            b_id.appendChild(h1);
+        }
+
+
+        function change(){
+
+            event.preventDefault();
+            var greenh1=document.getElementsByClassName('green');
+            for(var i=0;i<greenh1.length;i++){
+
+            greenh1[i].style.color="pink"; 
+
+           }
+           
         }
      </script>
 </html>
