@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+
+    </head>
+
+    <body>
+
+        <form id="loginform">
+            Enter Username: <input type="text" id="username"> 
+              <button onclick="login()">
+                  Submit
+              </button>
+              <img id="userprofile">
+
+        </form>
+
+        <script>
+            
+            function login(){
+
+              event.preventDefault();
+
+              var users=['akash', 'aditya', 'mahesh'];
+              var username=document.getElementById('username').value;
+              if(users.includes(username)){
+
+                  document.getElementById('userprofile').src='images'+'/'+username+"."+'jpeg';
+              }
+            }
+        </script>
+    </body>
+</html>
